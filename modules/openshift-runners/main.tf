@@ -12,11 +12,13 @@ resource "helm_release" "runners" {
   set {
     name  = "githubAppId"
     value = var.github_app_id
+    type  = "string"
   }
 
   set {
     name  = "githubAppInstallId"
     value = var.github_app_install_id
+    type  = "string"
   }
 
   set_sensitive {
