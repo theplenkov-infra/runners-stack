@@ -62,5 +62,15 @@ resource "helm_release" "runners" {
     value = var.cpu_limit
   }
 
+  set {
+    name  = "runnerImage"
+    value = var.runner_image
+  }
+
+  set {
+    name  = "runnerTag"
+    value = var.runner_tag
+  }
+
   wait = true
 }

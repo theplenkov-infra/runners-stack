@@ -41,3 +41,15 @@ variable "replicas" {
   description = "Number of runner pods"
   default     = 1
 }
+
+variable "runner_image" {
+  type        = string
+  description = "Self-hosted runner container image"
+  default     = "image-registry.openshift-image-registry.svc:5000/theplenkov-dev/runner-tools"
+}
+
+variable "runner_tag" {
+  type        = string
+  description = "Self-hosted runner container image tag"
+  default     = "latest"
+}

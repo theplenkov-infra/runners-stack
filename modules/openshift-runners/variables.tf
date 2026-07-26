@@ -44,3 +44,13 @@ variable "cpu_limit" {
   type    = string
   default = "500m"
 }
+
+variable "runner_image" {
+  type    = string
+  default = "quay.io/redhat-github-actions/runner"
+}
+
+variable "runner_tag" {
+  type    = string
+  default = "v1"
+}

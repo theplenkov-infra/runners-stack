@@ -13,5 +13,7 @@ deployment "ai" {
     github_app_install_id = "149123614"
     runner_labels         = ["self-hosted", "linux", "x64", "openshift", "ai"]
     replicas              = 2
+    runner_image          = "image-registry.openshift-image-registry.svc:5000/theplenkov-dev/runner-tools"
+    runner_tag            = "latest"
   }
 }
