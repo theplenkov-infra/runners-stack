@@ -1,12 +1,3 @@
-removed {
-  from   = component.demo
-  source = "./modules/demo"
-
-  providers = {
-    random = provider.random.this
-  }
-}
-
 component "openshift_runners" {
   source = "./modules/openshift-runners"
 

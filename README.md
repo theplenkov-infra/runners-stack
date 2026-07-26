@@ -10,8 +10,8 @@ Terraform Stack for deploying self-hosted GitHub Actions runners to OpenShift ac
 
 ## Deployments
 
-- `ai` — deploys runners to `theplenkov-ai`
-- `sandbox` — deploys runners to `theplenkov-sandbox`
+- `ai` — deploys runners to `theplenkov-ai` (active, 2 replicas)
+- `sandbox` — disabled until the GitHub App has `Self-hosted runners` permission in `theplenkov-sandbox`
 
 ## Secrets
 
