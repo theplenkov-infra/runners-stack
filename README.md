@@ -15,6 +15,10 @@ Terraform Stack for managing GitHub Actions runners across environments.
 
 ## Usage
 
+VCS-linked: push to `main` automatically triggers HCP Terraform Stack runs.
+
+For manual upload:
+
 ```bash
 cd stacks/runners
 terraform stacks init
