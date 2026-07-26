@@ -21,6 +21,12 @@ resource "helm_release" "runners" {
     type  = "string"
   }
 
+  set {
+    name  = "appSecretName"
+    value = "github-app-${var.github_owner}"
+    type  = "string"
+  }
+
   set_sensitive {
     name  = "githubAppPem"
     value = var.github_app_pem
